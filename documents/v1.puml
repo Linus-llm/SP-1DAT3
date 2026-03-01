@@ -1,0 +1,52 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Movie {
+-int id
+-string title
+-int releaseYear
+-double rating
+-Director director
+-List<Actor> actors
+-Set<Genre> genres
+}
+class Genre{
+-int id;
+-int tmdbID;
+-String name;
+}
+class MovieDTO {
+- String title
+- LocalDate releaseDate
+- double rating
+}
+class MovieDAO {}
+class Actor {}
+class ActorDTO{}
+class ActorDAO{}
+class Director {}
+class DirectorDTO{}
+class DirectorDAO{}
+class ServiceManager{}
+class Main{}
+MovieDAO --> Movie
+ActorDAO --> Actor
+DirectorDAO --> Director
+Main --> ServiceManager
+ServiceManager --> MovieDAO
+ServiceManager --> ActorDAO
+ServiceManager --> DirectorDAO
+ServiceManager --> MovieDTO
+ServiceManager --> ActorDTO
+ServiceManager --> DirectorDTO
+Movie o-- Actor
+Movie o-- Director
+Movie o-- Genre
+
+
+
+
+
+
+
+@enduml
