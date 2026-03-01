@@ -1,7 +1,8 @@
 #SP-1 Movie backend
 This backend fetches movies from the TMDb API, maps JSON to DTO's using jackson, then converts DTO's into entities. The entities are connected to PostgreSQL with JPA using DAO and a service layer.
-IMPORANT:
-requires TMDb API key and in this project the key is stored in an environment variable.
+## IMPORANT:
+- requires TMDb API key and in this project the key is stored in an environment variable.
+- configuration.properties is used as the file to define the database login credentials.
 
 ## Features
 - Fetches movies
