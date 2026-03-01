@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class GenreDAOTest {
 
     protected static EntityManagerFactory emf;
-    private final GenreDAO genreDAO = new GenreDAO();
+    private GenreDAO genreDAO = new GenreDAO();
 
     @BeforeAll
     static void boot() {

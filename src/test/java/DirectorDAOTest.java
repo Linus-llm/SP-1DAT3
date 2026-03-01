@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class DirectorDAOTest {
 
     protected static EntityManagerFactory emf;
-    private final DirectorDAO directorDAO = new DirectorDAO();
+    private DirectorDAO directorDAO = new DirectorDAO();
 
     @BeforeAll
     static void boot() {

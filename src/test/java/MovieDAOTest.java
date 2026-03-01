@@ -67,7 +67,7 @@ public class MovieDAOTest {
 
         em.getTransaction().begin();
         m.setTitle("New");
-        Movie updated = movieDAO.update(m, em);
+        movieDAO.update(m, em);
         em.getTransaction().commit();
 
         Movie found = movieDAO.findByTitle("New", em);

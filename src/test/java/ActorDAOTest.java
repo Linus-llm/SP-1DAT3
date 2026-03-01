@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ActorDAOTest {
 
     protected static EntityManagerFactory emf;
-    private final ActorDAO actorDAO = new ActorDAO();
+    private ActorDAO actorDAO = new ActorDAO();
 
     @BeforeAll
     static void boot() {
